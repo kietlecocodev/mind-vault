@@ -1,6 +1,6 @@
 ---
 name: claim-validator
-description: Validation layer for AI-returned information. Use in EVERY response that contains factual claims (numbers, prices, dates, API names/versions, research findings, health/legal/financial facts, market data, "X works like Y" statements). Labels each claim by verification status before it reaches the user, and verifies important claims against sources first. Skip only for pure code edits and casual conversation with no factual content.
+description: Use in EVERY response AND every persisted artifact (knowledge files, docs, Notion pages, reports) that contains factual claims — numbers, prices, dates, API names/versions/behavior, research findings, health/legal/financial facts, market data, "X works like Y" statements. Also applies when another skill (deep-coach gap-fill, research, summaries) produces the factual content. Skip only for pure code edits and casual conversation with no factual content.
 ---
 
 # Claim Validator — thông tin AI phải qua kiểm chứng trước khi tới user
@@ -21,6 +21,8 @@ Rationale: the user should never have to guess which parts of an AI answer are c
 4. **Verification means reading the source in this session.** "I'm fairly sure" is ⚠️, not ✅. A source fetched in a previous session is ⚠️ until re-checked.
 5. **Sources section** only when ≥2 cited sources; otherwise inline links suffice.
 6. **Skip entirely** for: pure code edits, formatting tasks, casual chat, and questions about the user's own files (where the file itself is the source — read it, then it's ✅ by definition).
+7. **Persisted artifacts are the strictest case, not an exemption.** Anything written to files that outlive the conversation — knowledge-base entries, docs, Notion pages, reports — MUST carry labels on every factual claim. An unlabeled claim in a persisted file is the worst violation: it gets re-read as verified truth for months. "It's a curated summary" is not an exemption; curation raises the bar, it doesn't remove it.
+8. **"Canonical/well-known" is not a verification status.** A claim is ✅ only if a source was read THIS session. Confident-sounding platform knowledge ("X is required", "Y always works like Z") from memory is ⚠️ — that confidence is exactly where wrong claims hide.
 
 ## Format example
 

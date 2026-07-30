@@ -6,7 +6,7 @@
   },
   "metadata": {
     "description": "Anti illusion-of-explanatory-depth toolkit: deep-coach (explain-first coaching with spaced review) and claim-validator (verification labels on every AI factual claim)",
-    "version": "1.0.0"
+    "version": "1.1.0"
   },
   "plugins": [
     {
@@ -25,5 +25,5 @@
       ]
     }
   ],
-  "version": "1.0.0"
+  "version": "1.1.0"
 }
