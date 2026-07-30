@@ -1,0 +1,29 @@
+{
+  "name": "mind-vault",
+  "owner": {
+    "name": "Kiet Le",
+    "email": "anhkietle1507@gmail.com"
+  },
+  "metadata": {
+    "description": "Anti illusion-of-explanatory-depth toolkit: deep-coach (explain-first coaching with spaced review) and claim-validator (verification labels on every AI factual claim)",
+    "version": "1.0.0"
+  },
+  "plugins": [
+    {
+      "name": "mind-vault",
+      "source": "./",
+      "description": "Two skills against the illusion of explanatory depth: deep-coach makes YOU explain concepts before the AI does (scores 1-5, fills gaps, logs to a versioned knowledge base with Notion mirror); claim-validator labels every factual claim in AI answers as verified/unverified/conflicting and verifies important claims against sources first.",
+      "category": "productivity",
+      "tags": [
+        "learning",
+        "ioed",
+        "critical-thinking",
+        "fact-checking",
+        "knowledge-base",
+        "spaced-repetition",
+        "notion"
+      ]
+    }
+  ],
+  "version": "1.0.0"
+}

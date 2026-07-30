@@ -1,0 +1,18 @@
+{
+  "name": "mind-vault",
+  "version": "1.0.0",
+  "description": "Anti illusion-of-explanatory-depth toolkit: deep-coach (explain-first coaching with spaced review) and claim-validator (verification labels on every AI factual claim)",
+  "author": {
+    "name": "Kiet Le"
+  },
+  "repository": "https://github.com/kietlecocodev/mind-vault",
+  "license": "MIT",
+  "keywords": [
+    "learning",
+    "ioed",
+    "critical-thinking",
+    "fact-checking",
+    "knowledge-base",
+    "spaced-repetition"
+  ]
+}

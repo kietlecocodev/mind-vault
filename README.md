@@ -12,12 +12,25 @@ Personal defense against the [illusion of explanatory depth](https://thedecision
 
 ## Install
 
+### As a plugin (recommended — any machine)
+
+Inside Claude Code:
+
+```
+/plugin marketplace add kietlecocodev/mind-vault
+/plugin install mind-vault@mind-vault
+```
+
+The knowledge base repo is cloned to `~/mind-vault` automatically the first time deep-coach logs a concept.
+
+### Manual (symlinks)
+
 ```bash
 git clone https://github.com/kietlecocodev/mind-vault.git ~/mind-vault
 ~/mind-vault/install.sh   # symlinks skills into ~/.claude/skills/
 ```
 
-Restart your Claude Code session afterward.
+Restart your Claude Code session afterward. Use one method per machine, not both — otherwise the skills load twice.
 
 ## Why
 

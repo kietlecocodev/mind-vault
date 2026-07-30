@@ -45,6 +45,12 @@ Explain ONLY the missing parts. Mechanism-first, concise. Don't re-explain what 
 Ask the user to re-explain the part that was missing. This closes the loop. If the user is busy, this step is skippable — note it in the log as unverified.
 
 ### 6. Log
+The knowledge base lives at `~/mind-vault`. If that directory doesn't exist on this machine (e.g., skill installed via plugin marketplace), clone it first:
+
+```bash
+[ -d ~/mind-vault ] || git clone https://github.com/kietlecocodev/mind-vault.git ~/mind-vault
+```
+
 Write the knowledge files (formats below), then:
 
 ```bash
