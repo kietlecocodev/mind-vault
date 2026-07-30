@@ -8,3 +8,4 @@ notion_parent_url: https://app.notion.com/p/3adbf39e0d598199a43effdbdc50e636
 | Concept | Level | Last coached | Next review | Notion synced |
 |---|---|---|---|---|
 | [illusion-of-explanatory-depth](concepts/illusion-of-explanatory-depth.md) | 3/5 | 2026-07-30 | 2026-08-02 | [✓](https://app.notion.com/p/3adbf39e0d5981d881afe947bc196ed6) |
+| [ios-paywall-iap](concepts/ios-paywall-iap.md) | 3/5 | 2026-07-30 | 2026-08-02 | [✓](https://app.notion.com/p/3adbf39e0d5981fca074ec4ebfc1e30d) |
